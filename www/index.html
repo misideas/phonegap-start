@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -25,68 +25,58 @@
 	<!-- contenedor reponsive -->
 	<div class="container-fluid">
 		<div class="row-fluid"> <!-- clase para colomnas *12 -->
-  					<div class="bar navbar navbar-inverse">
-					            <div class="navbar-inner">
-						            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-						                <span class="icon-bar"></span>
-						                <span class="icon-bar"></span>
-						                <span class="icon-bar"></span>
-						            </button>
-					            <a class="brand" href="#">
-					            	<img src="img/logo.png" id="logo" />
-					            </a>
-					            <div class="nav-collapse collapse offset1">
-						              <ul class="nav">
-						                <li class="active"><a href="#">Inicio</a></li>
-						                
-						                <li><a href="#myModal" role="button" class="btn-inverse" data-toggle="modal">Equipo</a>
-						                <!-- Modal -->
-						                <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						              	<div class="modal-header">
-						              	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">Equipo</h3>
-						                </div>
-						                <div class="modal-body"><p>One fine body…</p></div>
-						                <div class="modal-footer"><button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
-						                <button class="btn btn-primary">Save changes</button></div></div>
-						                </li>
-
-						                <li><a href="#myModal2" role="button" class="btn-inverse" data-toggle="modal">Contacto</a>
-						                <!-- Modal -->
-						                <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
-						              	<div class="modal-header">
-						              	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel2">Contacto</h3>
-						                </div>
-						                <div class="modal-body"><p>One fine body…</p></div>
-						                <div class="modal-footer"><button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
-						                <button class="btn btn-primary">Save changes</button></div></div>
-						                </li>
-						                
-
-						                
-						              </ul>
-						            </div>
-						        </div>
-				    </div>
-
-			
+			<div class="bar navbar navbar-inverse">
+	            <div class="navbar-inner">
+		            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		            </button>
+		            <a class="brand" href="#">
+		            	<img src="img/logo.png" id="logo" />
+		            </a>
+	            	<div class="nav-collapse collapse offset1">
+		              <ul class="nav">
+		                <li class="active"><a href="#">Inicio</a></li>
+		                <li><a href="#myModal" role="button" class="btn-inverse" data-toggle="modal">Equipo</a></li>
+						<li><a href="#myModal2" role="button" class="btn-inverse" data-toggle="modal">Contacto</a></li>  
+		              </ul>
+		            </div>
+		        </div>
+		    </div>
 			<div class="row-fluid"><!-- div footer fijo clase para colomnas *12 -->
 				<div class="fondo2"><!-- div 50px en heigth -->
 					<button class="web btn-inverse span2" href="#myModal2">ID WEB</button>
 					<button class="digital btn-inverse span2">ID DIGITAL</button>
 					<button class="visual btn-inverse span2">ID VISUAL</button>
-					<button class="app btn-inverse span2">ID MOBIL</button>
+					<button class="app btn-inverse span2">ID MOVIL</button>
 					<button class="sci btn-inverse span2">ID SCI</button>
-								
-					
 				</div>
 			</div>
 		</div><!-- Fin. clase para colomnas *12 -->
 	</div> <!-- Fin. contenedor reponsive general-->
-
+    <!-- Modal 1 -->
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  	<div class="modal-header">
+	  	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">Equipo</h3>
+	    </div>
+	    <div class="modal-body"><p>One fine body…</p></div>
+	    <div class="modal-footer">
+    		<button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+        </div>
+    </div>
+    <!-- Modal2 -->
+    <div id="myModal2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+	  	<div class="modal-header">
+	  	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+	  	     <h3 id="myModalLabel2">Contacto</h3>
+	    </div>
+	    <div class="modal-body"><p>One fine body…</p></div>
+	    <div class="modal-footer">
+	    <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+    </div>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
     <!-- Fin. javascript -->
-
-
 </body>
 </html>
