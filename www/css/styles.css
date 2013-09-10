@@ -132,7 +132,9 @@ video.fillWidth {
 	
 }
 
-
+.accordion-inner {
+	background-color: #ffffff;
+}
 
 
 
