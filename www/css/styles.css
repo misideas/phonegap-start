@@ -53,8 +53,11 @@ video.fillWidth {
 	bottom: 0px;
 	left: 0px;
 	position: fixed;
-	opacity: 0.8;
 
+}
+
+.fondo2 > a {
+	opacity: 0.8;
 }
 
 .footer {
@@ -69,7 +72,7 @@ video.fillWidth {
 
 .fondo2:hover{
 	width: 100%;
-	height: 90px;
+	height: 130px;
 	
 	-moz-transition: all 2 ease;
 	-webkit-transition: all 2 ease;
@@ -79,8 +82,7 @@ video.fillWidth {
 .web{
 	width: 100%;
 	height: 100%;
-	background-color: #fb5900;
-	font-color: white;
+	opacity: 0.8;
 	-moz-transition: all 2 ease;
 	-webkit-transition: all 2 ease;
 	
