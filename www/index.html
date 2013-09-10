@@ -19,7 +19,7 @@
 		</video>
 	</div>
 	<!-- div imagen fondo reponsive < 1200px -->
-	<img src="img/fondo.gif" id="imgfija" />
+	<img class="hidden-desktop" src="img/fondo.gif" id="imgfija" />
 	<!-- fin . div imagen fondo reponsive < 1200px -->
 
 	<!-- contenedor reponsive -->
@@ -44,7 +44,7 @@
 		            </div>
 		        </div>
 		    </div>
-			<div class="row-fluid"><!-- div footer fijo clase para colomnas *12 -->
+			<div class="row-fluid visible-desktop"><!-- div footer fijo clase para colomnas *12 -->
 				<div class="fondo2"><!-- div 50px en heigth -->
 					<button class="web btn-inverse span2" href="#myModal1" data-toggle="modal">ID WEB</button>
 					<button class="digital btn-inverse span2">ID DIGITAL</button>
@@ -180,6 +180,81 @@
             <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
         </div>
     </div>
+    <!-- Servicios en acordeon visible en tabletas y menos -->
+    <div class="accordion footer hidden-desktop" id="accordion2">
+	  <div class="accordion-group">
+	    <div class="accordion-heading">
+	      <a class="accordion-toggle opcionfooter" data-toggle="collapse" data-parent="#accordion2" href="#collapseWeb">
+	        ID WEB
+	      </a>
+	    </div>
+	    <div id="collapseWeb" class="accordion-body collapse in">
+	      <div class="accordion-inner">
+	        Anim pariatur cliche...
+	      </div>
+	    </div>
+	  </div>
+	  <div class="accordion-group">
+	    <div class="accordion-heading">
+	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseDigital">
+	        ID DIGITAL
+	      </a>
+	    </div>
+	    <div id="collapseDigital" class="accordion-body collapse">
+	      <div class="accordion-inner">
+	        Anim pariatur cliche...
+	      </div>
+	    </div>
+	  </div>
+	  <div class="accordion-group">
+	    <div class="accordion-heading">
+	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseVisual">
+	        ID VISUAL
+	      </a>
+	    </div>
+	    <div id="collapseVisual" class="accordion-body collapse">
+	      <div class="accordion-inner">
+	        Anim pariatur cliche...
+	      </div>
+	    </div>
+	  </div>
+	  <div class="accordion-group">
+	    <div class="accordion-heading">
+	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseMovil">
+	        ID MOVIL
+	      </a>
+	    </div>
+	    <div id="collapseMovil" class="accordion-body collapse">
+	      <div class="accordion-inner">
+	        Anim pariatur cliche...
+	      </div>
+	    </div>
+	  </div>
+	  <div class="accordion-group">
+	    <div class="accordion-heading">
+	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSci">
+	        ID SCI
+	      </a>
+	    </div>
+	    <div id="collapseSci" class="accordion-body collapse">
+	      <div class="accordion-inner">
+	        Anim pariatur cliche...
+	      </div>
+	    </div>
+	  </div>
+	  <div class="accordion-group">
+	    <div class="accordion-heading">
+	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseMark">
+	        ID MARKETING
+	      </a>
+	    </div>
+	    <div id="collapseMark" class="accordion-body collapse">
+	      <div class="accordion-inner">
+	        Anim pariatur cliche...
+	      </div>
+	    </div>
+	  </div>
+	</div>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
     <!-- Fin. javascript -->

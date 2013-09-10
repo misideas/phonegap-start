@@ -1,3 +1,7 @@
+body {
+	background-color: #000000;
+}
+
 #video-container {
 	position: absolute;
 	top:0%;
@@ -33,7 +37,7 @@ video.fillWidth {
  }
 
 
- .bar{
+.bar{
 	width: 100%;
 	height: auto;
 	left: 0px;
@@ -44,6 +48,16 @@ video.fillWidth {
 }
 
 .fondo2{
+	width: 100%;
+	height: auto;
+	bottom: 0px;
+	left: 0px;
+	position: fixed;
+	opacity: 0.8;
+
+}
+
+.footer {
 	width: 100%;
 	height: auto;
 	bottom: 0px;
@@ -85,6 +99,11 @@ video.fillWidth {
 	height: 100%;
 	background-color: #fb5900;
 	font-color: white;
+	
+}
+
+.opcionfooter{
+	font-color: #fb5900;
 	
 }
 
