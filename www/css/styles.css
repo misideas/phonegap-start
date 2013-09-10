@@ -136,5 +136,9 @@ video.fillWidth {
 	background-color: #ffffff;
 }
 
+.accordion-heading {
+	text-align: center;
+}
+
 
 
