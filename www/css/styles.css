@@ -103,8 +103,7 @@ video.fillWidth {
 }
 
 .opcionfooter{
-	font-color: #fb5900;
-	
+	font-color: #fb5900;	
 }
 
 .app{
@@ -134,10 +133,17 @@ video.fillWidth {
 
 .accordion-inner {
 	background-color: #ffffff;
+	opacity: 0.8;
 }
 
 .accordion-heading {
 	text-align: center;
+	font-color: #fb5900;
+	opacity: 0.8;
+}
+
+.accordion-heading > a:link {
+	color: #fb5900;
 }
 
 
