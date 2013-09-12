@@ -18,40 +18,35 @@
 			tu navegador no soporta el tag de video . Sugerimos actualizar tu navegador.
 		</video>
 	</div>
-	<!-- div imagen fondo reponsive < 1200px -->
+	<!-- div imagen fondo reponsive < 979px -->
 	<img class="hidden-desktop" src="img/fondo.gif" id="imgfija" />
-	<!-- fin . div imagen fondo reponsive < 1200px -->
+	<!-- fin . div imagen fondo reponsive < 979px -->
 
 	<!-- contenedor reponsive -->
 	<div class="container-fluid">
 		<div class="row-fluid"> <!-- clase para colomnas *12 -->
 			<div class="bar navbar navbar-inverse">
 	            <div class="navbar-inner">
-		            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		                <span class="icon-bar"></span>
-		            </button>
 		            <a class="brand" href="#">
 		            	<img src="img/logo.png" id="logo" />
 		            </a>
-	            	<div class="nav-collapse collapse offset1">
-		              <ul class="nav">
-		                <li class="active"><a href="#">Inicio</a></li>
-		                <li><a href="#myModal" role="button" class="btn-inverse" data-toggle="modal">Equipo</a></li>
-						<li><a href="#myModal2" role="button" class="btn-inverse" data-toggle="modal">Contacto</a></li>  
-		              </ul>
-		            </div>
+	            	
+	              <ul class="nav pull-right">
+	                <li class="active"><a href="#">Inicio</a></li>
+	                <li><a href="#myModal" role="button" class="btn-inverse" data-toggle="modal">Equipo</a></li>
+					<li><a href="#myModal2" role="button" class="btn-inverse" data-toggle="modal">Contacto</a></li>  
+	              </ul>
+		           
 		        </div>
 		    </div>
-			<div class="visible-desktop"><!-- div footer fijo clase para colomnas *12 -->
+			<div><!-- div footer fijo clase para colomnas *12 -->
 				<div class="fondo2"><!-- div 50px en heigth -->
-					<a class="" href="#myModal1" data-toggle="modal"><img src="img/botonweb.png"></a>
-					<a class=""><img src="img/botondigital.png"></a>
-					<a class="" href="#myModal3" data-toggle="modal"><img src="img/botonvisual.png"></a>
-					<a class="" href="#myModal4" data-toggle="modal"><img src="img/botonmovil.png"></a>
-					<a class="" href="#myModal5" data-toggle="modal"><img src="img/botonmark.png"></a>
-					<a class=""><img src="img/botonmark.png"></a>
+					<a href="#myModal1" data-toggle="modal"><img src="img/botonweb.png"></a>
+					<a><img src="img/botondigital.png"></a>
+					<a href="#myModal3" data-toggle="modal"><img src="img/botonvisual.png"></a>
+					<a href="#myModal4" data-toggle="modal"><img src="img/botonmovil.png"></a>
+					<a href="#myModal5" data-toggle="modal"><img src="img/botonmark.png"></a>
+					<a><img src="img/botonmark.png"></a>
 				</div>
 			</div>
 		</div><!-- Fin. clase para colomnas *12 -->
@@ -84,7 +79,7 @@
 	        </div>
         </div>
         <div class="modal-footer">
-            <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+            <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Cerrar</button>
         </div>
     </div>
     <!-- Modal 3 -->
@@ -180,81 +175,7 @@
             <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
         </div>
     </div>
-    <!-- Servicios en acordeon visible en tabletas y menos -->
-    <div class="accordion footer hidden-desktop" id="accordion2">
-	  <div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle opcionfooter" data-toggle="collapse" data-parent="#accordion2" href="#collapseWeb">
-	        ID WEB
-	      </a>
-	    </div>
-	    <div id="collapseWeb" class="accordion-body collapse">
-	      <div class="accordion-inner">
-	        <img src="img/estudiamos.png">
-	      </div>
-	    </div>
-	  </div>
-	  <div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseDigital">
-	        ID DIGITAL
-	      </a>
-	    </div>
-	    <div id="collapseDigital" class="accordion-body collapse">
-	      <div class="accordion-inner">
-	        Anim pariatur cliche...
-	      </div>
-	    </div>
-	  </div>
-	  <div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseVisual">
-	        ID VISUAL
-	      </a>
-	    </div>
-	    <div id="collapseVisual" class="accordion-body collapse">
-	      <div class="accordion-inner">
-	        <img src="img/marca.png">
-	      </div>
-	    </div>
-	  </div>
-	  <div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseMovil">
-	        ID MOVIL
-	      </a>
-	    </div>
-	    <div id="collapseMovil" class="accordion-body collapse">
-	      <div class="accordion-inner">
-	        <img src="img/empresa.png">
-	      </div>
-	    </div>
-	  </div>
-	  <div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSci">
-	        ID SCI
-	      </a>
-	    </div>
-	    <div id="collapseSci" class="accordion-body collapse">
-	      <div class="accordion-inner">
-	        <img src="img/proyeccion.png">
-	      </div>
-	    </div>
-	  </div>
-	  <div class="accordion-group">
-	    <div class="accordion-heading">
-	      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseMark">
-	        ID MARKETING
-	      </a>
-	    </div>
-	    <div id="collapseMark" class="accordion-body collapse">
-	      <div class="accordion-inner">
-	        Anim pariatur cliche...
-	      </div>
-	    </div>
-	  </div>
-	</div>
+    <!-- Modal 6 -->
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
     <!-- Fin. javascript -->
