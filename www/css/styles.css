@@ -160,3 +160,216 @@ video.fillWidth {
 }
 
 
+.navbar-inner {
+	border-radius:0 !important;
+	padding-right:0 !important;
+}
+#redessociales {
+}
+		#redessociales A SPAN {
+			display:none;
+		}
+		#redessociales A {
+			float:left;
+			height:40px;
+			width:40px;
+		}
+		.linkedin {
+			background-image:url(../img/in.png);
+			background-repeat:no-repeat;
+		}
+			.linkedin:hover {
+				background-image:url(../img/in_hover.png);
+			}
+		.yt {
+			background-image:url(../img/yt.png);
+			background-repeat:no-repeat;
+		}
+			.yt:hover {
+				background-image:url(../img/yt_hover.png);
+			}
+		.fb {
+			background-image:url(../img/fb.png);
+			background-repeat:no-repeat;
+		}
+			.fb:hover {
+				background-image:url(../img/fb_hover.png);
+			}
+		.tw {
+			background-image:url(../img/tw.png);
+			background-repeat:no-repeat;
+		}
+			.tw:hover {
+				background-image:url(../img/tw_hover.png);
+			}
+#botonesservicios {
+	text-align:center;
+}
+#botonesservicios A {
+	float:left;
+	width:120px;
+	height:120px;
+}
+	#botonesservicios A SPAN {
+		display:none;
+	}
+	.idweb {
+		background-image:url(../img/botonweb.png);
+	}
+		.idweb:hover {
+			background-image:url(../img/botonweb_alt.png);
+		}
+	.iddigital {
+		background-image:url(../img/botondigital.png);
+	}
+		.iddigital:hover {
+			background-image:url(../img/botondigital_alt.png);
+		}
+	.idvisual {
+		background-image:url(../img/botonvisual.png);
+	}
+		.idvisual:hover {
+			background-image:url(../img/botonvisual_alt.png);
+		}
+	.idmovil {
+		background-image:url(../img/botonmovil.png);
+	}
+		.idmovil:hover {
+			background-image:url(../img/botonmovil_alt.png);
+		}
+	.idsci {
+		background-image:url(../img/botonisc.png);
+	}
+		.idsci:hover {
+			background-image:url(../img/botonisc_alt.png);
+		}
+	.idmark {
+		background-image:url(../img/botonmark.png);
+	}
+		.idmark:hover {
+			background-image:url(../img/botonmark_alt.png);
+		}
+		
+.modal {
+	background-color:rgb(101,101,101) !important;
+}
+.modal-footer {
+	background-color:rgba(0,0,0,0.6) !important;
+}
+#myModalLabel {
+	color:#FFF !important;
+}
+.modaltext {
+	color:#FFF !important;
+}
+#preloadedImages {
+	width: 0px;
+	height: 0px;
+	display: inline;
+	background-image:url(../img/botonweb_alt.png);
+	background-image:url(../img/botondigital_alt.png);
+	background-image:url(../img/botonvisual_alt.png);
+	background-image:url(../img/botonmovil_alt.png);
+	background-image:url(../img/botonisc_alt.png);
+	background-image:url(../img/botonmark_alt.png);
+	background-image:url(../img/in_hover.png);
+	background-image:url(../img/yt_hover.png);
+	background-image:url(../img/fb_hover.png);
+	background-image:url(../img/tw_hover.png);
+}
+.brand {
+	width:50px;
+	height:73px;
+	margin-bottom:-55px;
+}
+#barranav {
+	height:40px;
+}
+
+
+.modal.fade {
+  top: 200%;
+  -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, top 0.3s ease-out;
+          transition: opacity 0.3s linear, top 0.3s ease-out;
+}
+
+.modal.fade.in {
+  top: 20%;
+}
+#EquipoTrabajo.modal {
+	background-color:rgba(000,000,000,0.6) !important
+}
+#EquipoTrabajo #myModalLabel {
+	color:#F60 !important;
+}
+#EquipoTrabajo.modal.fade {
+  top: -25%;
+  -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, top 0.3s ease-out;
+          transition: opacity 0.3s linear, top 0.3s ease-out;
+}
+
+#EquipoTrabajo.modal.fade.in {
+  top: 10%;
+}
+
+.modal-header {
+	border-bottom:0 !important;
+}
+
+.modal-footer {
+	border-top:0 !important;
+	box-shadow:none !important;
+	-webkit-box-shadow:none !important;
+	-moz-box-shadow:none !important;
+}
+
+@media (max-width: 767px) {
+#botonesservicios A {
+	float:left;
+	width:70px;
+	height:70px;
+	background-size:cover;
+}
+	#botonesservicios A SPAN {
+		display:none;
+	}
+	.idweb {
+		background-image:url(../img/botonweb_alt.png);
+	}
+	.iddigital {
+		background-image:url(../img/botondigital_alt.png);
+	}
+	.idvisual {
+		background-image:url(../img/botonvisual_alt.png);
+	}
+	.idmovil {
+		background-image:url(../img/botonmovil_alt.png);
+	}
+	.idsci {
+		background-image:url(../img/botonisc_alt.png);
+	}
+	.idmark {
+		background-image:url(../img/botonmark_alt.png);
+	}
+}
+@media (max-width: 320px) {
+#redessociales {
+	position:fixed;
+	right:0;
+	bottom:10px;
+}
+}
+
+@media (min-width: 980px) {
+#EquipoTrabajo {
+	width:980px !important;
+	margin-left:-490px !important;
+}
+	#EquipoTrabajo .modal-body {
+		max-height:510px;
+	}
+}

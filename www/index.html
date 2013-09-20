@@ -9,17 +9,19 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
+	<div id="preloadedImages"></div>
 	<!-- contenedor video fondo reponsive hasta 1200px -->
 	<div id="video-container">
 		<video autoplay loop class="fillWidth visible-desktop">
 			<source src="img/fondo.mp4" type="video/mp4"/>
 			<source src="img/fondo.ogv" type="video/ogg"/>
 			<source src="img/fondo.webm" type="video/webm"/>
-			tu navegador no soporta el tag de video . Sugerimos actualizar tu navegador.
+			tu navegador no soporta el tag de video. Sugerimos actualizar tu navegador.
 		</video>
 	</div>
 	<!-- div imagen fondo reponsive < 979px -->
-	<img class="hidden-desktop" src="img/fondo.gif" id="imgfija" />
+	<img class="visible-phone" src="img/fondo.gif" id="imgfija" />
+	<img class="visible-tablet" src="img/fondo2.gif" id="imgfija" />
 	<!-- fin . div imagen fondo reponsive < 979px -->
 
 	<!-- contenedor reponsive -->
@@ -30,31 +32,76 @@
 		            <a class="brand" href="#">
 		            	<img src="img/logo.png" id="logo" />
 		            </a>
-	            	
-	              <ul class="nav pull-right">
-	                <li class="active"><a href="#">Inicio</a></li>
-	                <li><a href="#myModal" role="button" class="btn-inverse" data-toggle="modal">Equipo</a></li>
-					<li><a href="#myModal2" role="button" class="btn-inverse" data-toggle="modal">Contacto</a></li>  
-	              </ul>
+                    <div id="barranav" class="span9">
+	              		<ul class="nav pull-right">
+	                		<li class="active"><a href="#">Inicio</a></li>
+	                		<li><a href="#EquipoTrabajo" role="button" class="btn-inverse" data-toggle="modal">Equipo</a></li>
+							<li><a href="#myModal2" role="button" class="btn-inverse" data-toggle="modal">Contacto</a></li>
+	              		</ul>
+                   </div>
+	            	<div id="redessociales">
+                    	<div class="pull-right">
+                            <a href="https://www.facebook.com/Ideas.Soluciones.Creativas" class="fb" target="new"><span>Facebook</span></a>
+                            <a href="https://twitter.com/ideasysolucion" class="tw" target="new"><span>Twitter</span></a>
+                            <a href="http://www.linkedin.com/profile/view?id=282159328&trk=hb_tab_pro_top" class="linkedin" target="new"><span>LinkedIn</span></a>
+                            <a href="#" class="yt"><span>Youtube</span></a>
+                        </div>
+                   </div>
+                   
+                   
+                  
 		           
 		        </div>
 		    </div>
-			<div><!-- div footer fijo clase para colomnas *12 -->
-				<div class="fondo2"><!-- div 50px en heigth -->
-					<a href="#myModal1" data-toggle="modal"><img src="img/botonweb.png"></a>
-					<a><img src="img/botondigital.png"></a>
-					<a href="#myModal3" data-toggle="modal"><img src="img/botonvisual.png"></a>
-					<a href="#myModal4" data-toggle="modal"><img src="img/botonmovil.png"></a>
-					<a href="#myModal5" data-toggle="modal"><img src="img/botonmark.png"></a>
-					<a><img src="img/botonmark.png"></a>
+			<div class="fondo2"><!-- div footer fijo clase para colomnas *12 -->
+				<div id="botonesservicios"><!-- div 50px en heigth -->
+                	<p>
+					<a href="#ModalWeb" class="idweb" data-toggle="modal"><span>idWeb</span></a>
+					<a href="#ModalDigital" class="iddigital" data-toggle="modal"><span>idDigital</span></a>
+					<a href="#ModalVisual" class="idvisual" data-toggle="modal"><span>idVisual</span></a>
+					<a href="#ModalMovil" class="idmovil" data-toggle="modal"><span>idMovil</span></a>
+					<a href="#ModalSCI" class="idsci" data-toggle="modal"><span>idSCI</span></a>
+					<a href="#ModalMarketing" class="idmark" data-toggle="modal"><span>idMarketing</span></a>
+                    </p>
 				</div>
 			</div>
 		</div><!-- Fin. clase para colomnas *12 -->
 	</div> <!-- Fin. contenedor reponsive general-->
     <!-- Modal 1 -->
-    <div id="myModal1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div id="ModalWeb" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  	<div class="modal-header">
-	  	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">ID WEB</h3>
+	  	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">id Web</h3>
+	    </div>
+	    <div class="modal-body">
+	        <div class="row-fluid">
+	            <div class="span8">
+	                <p class="modaltext">Abordamos las propuestas de diseño de piezas, sitios y estrategias virtuales desde una visión amplia en lo que significa y representará el medio on-line en la vida empresarial y comercial. Diseños responsables, modernos, visionarios y efectivo.</p>
+	                <img src="img/estudiamos.png">
+	            </div>
+	            <div class="span4">
+	                <img src="img/banner1.png">
+	            </div>
+	            <div class="row-fluid">
+	                <div class="span4">
+	                    <img src="img/diseno1.png">
+	                </div>
+	                <div class="span4">
+	                    <img src="img/diseno2.png">
+	                </div>
+	                <div class="span4">
+	                    <img src="img/diseno3.png"> 
+	                </div>
+	            </div>
+	        </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+        </div>
+    </div>
+    <!-- Modal 2 -->
+    <div id="ModalDigital" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  	<div class="modal-header">
+	  	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">id Digital</h3>
 	    </div>
 	    <div class="modal-body">
 	        <div class="row-fluid">
@@ -83,9 +130,9 @@
         </div>
     </div>
     <!-- Modal 3 -->
-    <div id="myModal3" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div id="ModalVisual" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  	<div class="modal-header">
-	  	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">ID VISUAL</h3>
+	  	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">id Visual</h3>
 	    </div>
 	    <div class="modal-body">
 	        <div class="row-fluid">
@@ -110,13 +157,13 @@
 	        </div>
         </div>
         <div class="modal-footer">
-            <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+            <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Cerrar</button>
         </div>
     </div>
     <!-- Modal 4 -->
-    <div id="myModal4" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div id="ModalMovil" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  	<div class="modal-header">
-	  	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">ID MOVIL</h3>
+	  	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">id Móvil</h3>
 	    </div>
 	    <div class="modal-body">
 	        <div class="row-fluid">
@@ -141,13 +188,13 @@
 	        </div>
         </div>
         <div class="modal-footer">
-            <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+            <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Cerrar</button>
         </div>
     </div>
     <!-- Modal 5 -->
-    <div id="myModal5" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div id="ModalSCI" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 	  	<div class="modal-header">
-	  	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">ID SCI</h3>
+	  	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">id S.C.I. Soluciones Creativas Integrales</h3>
 	    </div>
 	    <div class="modal-body">
 	        <div class="row-fluid">
@@ -172,10 +219,59 @@
 	        </div>
         </div>
         <div class="modal-footer">
-            <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+            <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Cerrar</button>
         </div>
     </div>
     <!-- Modal 6 -->
+    <div id="ModalMarketing" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  	<div class="modal-header">
+	  	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">id Marketing</h3>
+	    </div>
+	    <div class="modal-body">
+	        <div class="row-fluid">
+	            <div class="span8">
+	                <p class="modaltext">Abordamos las propuestas de diseño de piezas, sitios y estrategias virtuales desde una visión amplia en lo que significa y representará el medio on-line en la vida empresarial y comercial. Diseños responsables, modernos, visionarios y efectivo.</p>
+	                <img src="img/estudiamos.png">
+	            </div>
+	            <div class="span4">
+	                <img src="img/banner1.png">
+	            </div>
+	            <div class="row-fluid">
+	                <div class="span4">
+	                    <img src="img/diseno1.png">
+	                </div>
+	                <div class="span4">
+	                    <img src="img/diseno2.png">
+	                </div>
+	                <div class="span4">
+	                    <img src="img/diseno3.png"> 
+	                </div>
+	            </div>
+	        </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+        </div>
+    </div>
+    <!-- Modal Equipo -->
+    <div id="EquipoTrabajo" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  	<div class="modal-header">
+	  	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">Equipo de Trabajo</h3>
+	    </div>
+	    <div class="modal-body">
+	        <div class="row-fluid">
+            	<img src="img/lucho.png" alt="Lucho - Creativo"> 
+                <img src="img/mono.png" alt="El Mono - Diseñador"> 
+                <img src="img/caliche.png" alt="Caliche - Seguridad"> 
+                <img src="img/john.png" alt="John - Websites"> 
+                <img src="img/mauro2.png" alt="Mauro - Aplicaciones"> 
+                <img src="img/jorgito.png" alt="Jorgito - Animaciones">
+        	</div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-warning" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+        </div>
+    </div>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
     <!-- Fin. javascript -->
