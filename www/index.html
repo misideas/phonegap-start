@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/funcionesPG.js"></script>
 </head>
 <body>
 	<div id="preloadedImages"></div>
@@ -226,9 +226,12 @@
    			$('#Contacto').modal('show');
 		});
     </script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
+	<script>
+		var dataRef = new Firebase('https://misideas.firebaseIO.com/');
+		dataRef.on('value', function(snapshot) {
+		  alerta(snapshot.val());
+		});
+	</script>
     <!-- Fin. javascript -->
 </body>
 </html>
