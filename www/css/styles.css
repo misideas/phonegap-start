@@ -2,6 +2,16 @@ body {
 	background-color: #000000;
 }
 
+#flecha-servicios {
+	width:69px;
+	height:50%;
+	background-image:url(../img/nuestro-portafolio.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	position:fixed;
+	left:30px;
+	bottom:130px;
+}
 #video-container {
 	position: absolute;
 	top:0%;
@@ -34,6 +44,9 @@ video.fillWidth {
  	top:3px;
  	overflow: visible;
  	position: absolute;
+	width:5%;
+	height:auto;
+	min-width:50px;
  }
 
 
@@ -202,7 +215,16 @@ video.fillWidth {
 			.tw:hover {
 				background-image:url(../img/tw_hover.png);
 			}
+		#btn-audiooff {
+			background-image:url(../img/audiooff.png);
+		}
+		#btn-audioon {
+			background-image:url(../img/audioon.png);
+			visibility:hidden;
+			margin-left:-40px;
+		}
 #botonesservicios {
+	float:left;
 	text-align:center;
 }
 #botonesservicios A {
@@ -296,7 +318,7 @@ video.fillWidth {
 }
 
 .modal.fade.in {
-  top: 20%;
+  top: 10%;
 }
 #EquipoTrabajo.modal {
 	background-color:rgba(000,000,000,0.6) !important
@@ -304,7 +326,9 @@ video.fillWidth {
 #EquipoTrabajo #myModalLabel {
 	color:#F60 !important;
 }
-#EquipoTrabajo.modal.fade {
+
+/* Código para hacer que los modales del menu de arriba vayan hacia abajo */
+#EquipoTrabajo.modal.fade, #Contacto.modal.fade {
   top: -25%;
   -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
      -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
@@ -312,9 +336,11 @@ video.fillWidth {
           transition: opacity 0.3s linear, top 0.3s ease-out;
 }
 
-#EquipoTrabajo.modal.fade.in {
+#EquipoTrabajo.modal.fade.in, #Contacto.modal.fade.in  {
   top: 10%;
 }
+
+/* Fin Código modal superior*/
 
 .modal-header {
 	border-bottom:0 !important;
@@ -325,6 +351,87 @@ video.fillWidth {
 	box-shadow:none !important;
 	-webkit-box-shadow:none !important;
 	-moz-box-shadow:none !important;
+}
+#noticias {
+	float:left;
+	width:-webkit-calc(100% - 750px);
+	width: calc(100% - 750px);
+}
+#notiizq {
+	float:left;
+	width:67px;
+	height:120px;
+	background-image:url(../img/notiinicio.png);
+}
+#notiprincipal {
+	float:left;
+	width:-webkit-calc(100% - 134px);
+	width: calc(100% - 134px);
+	height:120px;
+	background-color:#e34a00;
+	background-image:url(../img/bienvenidos.png);
+	background-position:center right 400px;
+	background-repeat:no-repeat;
+}
+	#notiprincipal A {
+		float:right;
+		width:320px;
+		height:103px;
+		margin:9px 0 8px 0;
+		background-image:url(../img/botonnoticias.png);
+		background-repeat:no-repeat;
+	}
+		#notiprincipal A SPAN {
+			display:none;
+		}
+#notider {
+	float:left;
+	width:67px;
+	height:120px;
+	background-image:url(../img/notifinal.png);
+}
+
+#Noticias.modal {
+	width:900px !important;
+	margin-left:-450px !important;
+	background-color:rgba(000,000,000,0.6) !important
+}
+
+/* Código Modales */
+
+
+#ModalWeb .modal-body {
+	background-color:#006b71;
+}
+#ModalDigital .modal-body {
+	background-color:#9b0159;
+}
+#ModalVisual .modal-body {
+	background-color:#183076;
+}
+#ModalMovil .modal-body {
+	background-color:#818900;
+}
+#ModalSCI .modal-body {
+	background-color:#000000;
+}
+#ModalMarketing .modal-body {
+	background-color:#007401;
+}
+
+
+/* Fin Código Modales */
+
+.btn {
+	-webkit-border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	border-radius: 0px !important;
+}
+
+#EquipoTrabajo .close {
+	color:#FFF;
+	opacity:0.5;
+	filter: alpha(opacity=50);
 }
 
 @media (max-width: 767px) {
@@ -355,12 +462,32 @@ video.fillWidth {
 	.idmark {
 		background-image:url(../img/botonmark_alt.png);
 	}
+	.linkedin {
+		background-image:url(../img/in_hover.png);
+	}
+	.yt {
+		background-image:url(../img/yt_hover.png);
+	}
+	.fb {
+		background-image:url(../img/fb_hover.png);
+	}
+	.tw {
+		background-image:url(../img/tw_hover.png);
+	}
 }
 @media (max-width: 320px) {
 #redessociales {
 	position:fixed;
 	right:0;
 	bottom:10px;
+}
+.bar {	z-index:100 !important;
+}
+.navbar-inner{
+	height:40px !important;
+}
+.fondo2 {
+	z-index:99 !important;
 }
 }
 
@@ -371,5 +498,49 @@ video.fillWidth {
 }
 	#EquipoTrabajo .modal-body {
 		max-height:510px;
+	}
+#ModalMarketing.modal, #ModalSCI.modal, #ModalMovil.modal, #ModalVisual.modal, #ModalDigital.modal, #ModalWeb.modal {
+	width:800px !important;
+	margin-left:-400px !important;
+}
+#ModalMarketing .modal-body, #ModalSCI .modal-body, #ModalMovil .modal-body, #ModalVisual .modal-body, #ModalDigital .modal-body, #ModalWeb .modal-body {
+	height:484px !important;
+	max-height:484px !important;
+	background-position:left bottom;
+	background-repeat:no-repeat;
+}
+#ModalMarketing .modaltext, #ModalSCI .modaltext, #ModalMovil .modaltext, #ModalVisual .modaltext, #ModalDigital .modaltext, #ModalWeb .modaltext {
+	margin-top:20px;
+}
+#ModalWeb .modal-body {
+	background-image:url(../img/webbkg.png);
+}
+#ModalDigital .modal-body {
+	background-image:url(../img/mediabkg.png);
+}
+#ModalVisual .modal-body {
+	background-image:url(../img/visualbkg.png);
+}
+#ModalMovil .modal-body {
+	background-image:url(../img/movilbkg.png);
+}
+#ModalSCI .modal-body {
+	background-image:url(../img/scibkg.png);
+}
+#ModalMarketing .modal-body {
+	background-image:url(../img/marketingbkg.png);
+}
+}
+@media (max-width: 1200px) {
+	
+	#notiprincipal A {
+		width:100%;
+		background-size:contain;
+		background-position:center;
+	}
+}
+@media (max-width: 1613px) {
+	#notiprincipal {
+		background-image:none;
 	}
 }
