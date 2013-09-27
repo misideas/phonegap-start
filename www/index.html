@@ -12,16 +12,16 @@
 	<div id="preloadedImages"></div>
 	<!-- contenedor video fondo reponsive hasta 1200px -->
 	<div id="video-container">
-		<video autoplay loop class="fillWidth visible-desktop">
+		<video id="video-file" autoplay loop class="fillWidth visible-desktop" onEnded="document.getElementById('Contacto').modal('show');">
 			<source src="img/fondo.mp4" type="video/mp4"/>
 			<source src="img/fondo.ogv" type="video/ogg"/>
 			<source src="img/fondo.webm" type="video/webm"/>
 			tu navegador no soporta el tag de video. Sugerimos actualizar tu navegador.
 		</video>
 	</div>
-    <div id="sound-container">
+    <!-- <div id="sound-container">
     	<audio id="back-sound" src="media/sonido-fondo.mp3" autoplay loop class="visible-desktop"> </audio>
-    </div>
+    </div> -->
 	<!-- div imagen fondo reponsive < 979px -->
 	<img class="visible-phone" src="img/fondo.gif" id="imgfija" />
 	<img class="visible-tablet" src="img/fondo2.gif" id="imgfija" />
@@ -48,8 +48,8 @@
                             <a href="https://twitter.com/ideasysolucion" class="tw" target="new"><span>Twitter</span></a>
                             <a href="http://www.linkedin.com/profile/view?id=282159328&trk=hb_tab_pro_top" class="linkedin" target="new"><span>LinkedIn</span></a>
                             <a href="http://www.youtube.com/channel/UCZsoGMszLRhrixid8DFOdEg" class="yt" target="new"><span>Youtube</span></a>
-                            <a href="#" id="btn-audiooff" class="visible-desktop" onclick="document.getElementById('back-sound').pause(); document.getElementById('btn-audiooff').style.visibility='hidden'; document.getElementById('btn-audioon').style.visibility='visible';"><span>silenciar audio</span></a>
-                            <a href="#" id="btn-audioon" class="visible-desktop" onclick="document.getElementById('back-sound').play(); document.getElementById('btn-audioon').style.visibility='hidden'; document.getElementById('btn-audiooff').style.visibility='visible';"><span>reproducir audio</span></a>
+                            <a href="#" id="btn-audiooff" class="visible-desktop" onclick="document.getElementById('video-file').volume=0; document.getElementById('btn-audiooff').style.visibility='hidden'; document.getElementById('btn-audioon').style.visibility='visible';"><span>silenciar audio</span></a>
+                            <a href="#" id="btn-audioon" class="visible-desktop" onclick="document.getElementById('video-file').volume=1; document.getElementById('btn-audioon').style.visibility='hidden'; document.getElementById('btn-audiooff').style.visibility='visible';"><span>reproducir audio</span></a>
                         </div>
                    </div>
                    
@@ -61,6 +61,7 @@
             <div id="flecha-servicios" class="visible-desktop">
             </div>
 			<div class="fondo2"><!-- div footer fijo clase para colomnas *12 -->
+            	<a href="#Noticias" class="idnoticias hidden-desktop" data-toggle="modal"><span>idNoticias</span></a>
 				<div id="botonesservicios"><!-- div 50px en heigth -->
                 	<p>
 					<a href="#ModalWeb" class="idweb" data-toggle="modal"><span>idWeb</span></a>
@@ -105,12 +106,18 @@
     </div>
     <!-- Modal Media -->
     <div id="ModalDigital" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	   <div class="modal-header">
+	  	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">&nbsp;</h3>
+	    </div>
 	    <div class="modal-body">
-        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 	        <div class="row-fluid">
 	            <div class="span8">
+                	<img src="img/medialogo.png" alt="idMedia"> 
 	                <p class="modaltext">Realizamos producciones audiovisuales a su medida, abordando las necesidades del cliente de manera profesional y transparente con el único fin de obtener el mejor resultado. Producciones de alta calidad, con un lenguaje efectivo, moderno y atractivo.</p>
 	            </div>
+                <div class="span4 pull-right">
+           	    	<img src="img/mediaimg.png"> 
+                </div>
 	        </div>
         </div>
         <div class="modal-footer">
@@ -119,12 +126,18 @@
     </div>
     <!-- Modal Visual -->
     <div id="ModalVisual" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-header">
+	  	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">&nbsp;</h3>
+	    </div>
 	    <div class="modal-body">
-        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 	        <div class="row-fluid">
 	            <div class="span8">
+                	<img src="img/visuallogo.png" alt="idVisual"> 
 	                <p class="modaltext">El rigor del diseño con el toque de la creatividad, en piezas gráficas que requiere su marca, con la utilización de la última tecnología, además del acompañamiento hasta la producción final de cada pieza requerida.</p>
 	            </div>
+                <div class="span4 pull-right">
+           	    	<img src="img/visualimg.png"> 
+                </div>
 	        </div>
         </div>
         <div class="modal-footer">
@@ -133,12 +146,18 @@
     </div>
     <!-- Modal Móvil -->
     <div id="ModalMovil" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-header">
+	  	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">&nbsp;</h3>
+	    </div>
 	    <div class="modal-body">
-        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 	        <div class="row-fluid">
 	            <div class="span8">
+                	<img src="img/movillogo.png" alt="idMóvil"> 
 	                <p class="modaltext">Brindamos soluciones móviles, con notificaciones y acceso a la cámara del dispositivo o al gps. Pueden ser alojadas en nuestra nube de cómputo con la seguridad requerida, garantizando la privacidad de sus datos.</p>
 	            </div>
+                <div class="span4 pull-right">
+           	    	<img src="img/movilimg.png"> 
+                </div>
 	        </div>
         </div>
         <div class="modal-footer">
@@ -147,12 +166,18 @@
     </div>
     <!-- Modal SCI -->
     <div id="ModalSCI" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-header">
+	  	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">&nbsp;</h3>
+	    </div>
 	    <div class="modal-body">
-        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 	        <div class="row-fluid">
 	            <div class="span8">
+                	<img src="img/scilogo.png" alt="idSCI"> 
 	                <p class="modaltext">Vamos a la esencia, al corazón de su marca y de su producto con una investigación rápida pero completa y efectiva que nos dará diagnósticos claros sobre los requerimientos estratégicos de negocio, de mercadeo, comunicación o publicidad.</p>
 	            </div>
+                <div class="span4 pull-right">
+           	    	<img src="img/sciimg.png"> 
+                </div>
 	        </div>
         </div>
         <div class="modal-footer">
@@ -161,12 +186,18 @@
     </div>
     <!-- Modal Marketing -->
     <div id="ModalMarketing" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div class="modal-header">
+	  	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">&nbsp;</h3>
+	    </div>
 	    <div class="modal-body">
-        	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 	        <div class="row-fluid">
 	            <div class="span8">
+                	<img src="img/marketinglogo.png" alt="idMarketing"> 
 	                <p class="modaltext">Apalanque su negocio con internet, ofrezca sus productos y servicios las 24 horas del día y haga de su presencia en la web una experiencia rentable.</p>
 	            </div>
+                <div class="span4 pull-right">
+           	    	<img src="img/marketingimg.png"> 
+                </div>
 	        </div>
         </div>
         <div class="modal-footer">
@@ -221,18 +252,10 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
     <script>
-		//$("#video1").bind("ended", function() {
-   		//	$('#Contacto').modal('show');
-		//});
-    </script>
-    <script type="text/javascript" src="phonegap.js"></script>
-	<script type="text/javascript" src="js/funcionesPG.js"></script>
-	<script>
-		var dataRef = new Firebase('https://misideas.firebaseIO.com/');
-		dataRef.on('value', function(snapshot) {
-		  alerta(snapshot.val());
+		$("#video1").bind("ended", function() {
+   			$('#Contacto').modal('show');
 		});
-	</script>
+    </script>
     <!-- Fin. javascript -->
 </body>
 </html>

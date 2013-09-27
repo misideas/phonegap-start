@@ -35,25 +35,15 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
     },
-    // alert dialog dismissed
-    alertDismissed: function() {
-        // do something
-    },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-    	navigator.notification.alert(
-            'You are the winner!',  // message
-            app.alertDismissed,         // callback
-            'Game Over',            // title
-            'Done'                  // buttonName
-        );
-        /*var parentElement = document.getElementById(id);
+        var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-        */
+
         console.log('Received Event: ' + id);
     }
 };

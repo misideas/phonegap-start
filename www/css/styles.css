@@ -73,6 +73,19 @@ video.fillWidth {
 	opacity: 0.8;
 }
 
+.idnoticias {
+	float:left;
+	width:280px;
+	height:90px;
+	margin:9px 0 8px 0;
+	background-image:url(../img/botonnoticias.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+		.idnoticias SPAN {
+			display:none;
+		}
+		
 .footer {
 	width: 100%;
 	height: auto;
@@ -176,6 +189,7 @@ video.fillWidth {
 .navbar-inner {
 	border-radius:0 !important;
 	padding-right:0 !important;
+	height:40px !important;
 }
 #redessociales {
 }
@@ -400,25 +414,28 @@ video.fillWidth {
 /* Código Modales */
 
 
-#ModalWeb .modal-body {
+#ModalWeb .modal-body, #ModalWeb .modal-header {
 	background-color:#006b71;
 }
-#ModalDigital .modal-body {
+#ModalDigital .modal-body, #ModalDigital .modal-header  {
 	background-color:#9b0159;
 }
-#ModalVisual .modal-body {
+#ModalVisual .modal-body, #ModalVisual .modal-header  {
 	background-color:#183076;
 }
-#ModalMovil .modal-body {
+#ModalMovil .modal-body, #ModalMovil .modal-header  {
 	background-color:#818900;
 }
-#ModalSCI .modal-body {
-	background-color:#000000;
+#ModalSCI .modal-body, #ModalSCI .modal-header  {
+	background-color:#870303;
 }
-#ModalMarketing .modal-body {
+#ModalMarketing .modal-body, #ModalMarketing .modal-header  {
 	background-color:#007401;
 }
 
+#Noticias .modal-body {
+	background-color:#FFF;
+}
 
 /* Fin Código Modales */
 
@@ -435,6 +452,20 @@ video.fillWidth {
 }
 
 @media (max-width: 767px) {
+
+.idnoticias {
+	float:left;
+	width:200px;
+	height:64px;
+	margin:9px 0 8px 0;
+	background-image:url(../img/botonnoticias.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+		.idnoticias SPAN {
+			display:none;
+		}
+		
 #botonesservicios A {
 	float:left;
 	width:70px;
@@ -462,18 +493,7 @@ video.fillWidth {
 	.idmark {
 		background-image:url(../img/botonmark_alt.png);
 	}
-	.linkedin {
-		background-image:url(../img/in_hover.png);
-	}
-	.yt {
-		background-image:url(../img/yt_hover.png);
-	}
-	.fb {
-		background-image:url(../img/fb_hover.png);
-	}
-	.tw {
-		background-image:url(../img/tw_hover.png);
-	}
+
 }
 @media (max-width: 320px) {
 #redessociales {
@@ -481,11 +501,10 @@ video.fillWidth {
 	right:0;
 	bottom:10px;
 }
-.bar {	z-index:100 !important;
+.bar {	
+	z-index:100 !important;
 }
-.navbar-inner{
-	height:40px !important;
-}
+
 .fondo2 {
 	z-index:99 !important;
 }
@@ -543,4 +562,21 @@ video.fillWidth {
 	#notiprincipal {
 		background-image:none;
 	}
+}
+@media (max-width: 979px) {
+#EquipoTrabajo .modal-body IMG {
+	width:15%;
+	height:auto;
+}
+
+#Noticias.modal {
+	width:90% !important;
+	margin-left:0 !important;
+}
+
+	#Noticias.modal IMG {
+		max-width:50%;
+		height:auto;
+	}
+
 }
