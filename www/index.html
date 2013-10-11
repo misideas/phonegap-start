@@ -242,7 +242,7 @@
 	  	     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button><h3 id="myModalLabel">idNoticias</h3>
 	    </div>
 	    <div class="modal-body">
-	        <div class="row-fluid">
+	        <div id="newscontent" class="row-fluid">
         	</div>
         </div>
         <div class="modal-footer">
@@ -255,6 +255,22 @@
 		$("#video1").bind("ended", function() {
    			$('#Contacto').modal('show');
 		});
+		$.ajax({
+            type: "GET",
+            url: "http://misideas.me/index.php?option=com_content&view=featured&Itemid=102&format=feed&type=rss",
+            dataType: "xml",
+            success: function (xml){    
+
+                $(xml).find('item').each(function(){
+                	var value = $(this).find('title').text();
+                	$("newscontent").html(value);
+                });        
+
+            }, 
+            error: function(model, xhr, options) { 
+                alert("error");
+            }
+        });
     </script>
     <!-- Fin. javascript -->
 </body>
